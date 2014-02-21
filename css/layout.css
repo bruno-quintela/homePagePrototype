@@ -1,12 +1,13 @@
 body
 {
     padding: 0px;
+
 }
 
 
 #section1 {
     width:100%;
-    height:100%;
+    height:1000px;
     border-top: 1px solid grey;
 }
   #container {
@@ -14,13 +15,18 @@ body
     height: 240px;
     position: relative;
     margin: auto;
-    margin-top:100px;
+    margin-top:150px;
+    
+    
     padding: 0;
   }
 
   .border { background: silver; position: absolute; }
-  .borderh { height: 0px; border: 1px solid black; }
-  .borderv { width: 0px; border: 1px solid black; }
+  .borderh { height: 10px;background-color:#000; border: 1px solid;}
+  .borderv { width: 10px; background-color:#000;border: 1px solid ; }
+
+ 
+}
 
   #topbar {   
     left: 0px; top: 0px;
@@ -36,13 +42,25 @@ body
   }
   #content {
       position: absolute;
+      display:block;
       top: 2px;
       left: 2px;
       /* border-divs are 0px wide with 1px border all around, thus have a width & height of 2px (twice the border-width) -- 2 border-divs = 4 less pixels for the content ! */
       width: 316px;
       height: 236px;
-      background: whitesmoke;
-      overflow: auto;
-      text-shadow: 0 0 1px #555;
-      text-align: justify;
   }
+
+h1 {
+	font-family: Arial;
+	font-size: 5em;
+	text-align: center;
+    text-shadow: rgba(0,0,0,.05) 0 0 3px;
+  
+	background-image: url(../img/bck.jpg);
+    background-size:contain;
+	-webkit-background-clip: text;
+	background-clip: text;
+    
+
+	color: rgba(0,0,0,0);
+}
