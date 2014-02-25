@@ -1,74 +1,55 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>3D Effect for a Mobile App Showcase | Demo 3</title>
+		<meta name="description" content="3D Mobile App Showcase" />
+		<meta name="keywords" content="3d, mobile, layers, effect, css, showcase, perspective" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+    </script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="ms-wrapper ms-effect-3">
+				<button>toggle view</button>
+				<div class="ms-perspective">
+					<div class="ms-device">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/navbar.css">
-        <link rel="stylesheet" href="css/layout.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        
-        <!-- BEGIN DOCUMENT -->
-        <header class="mainHeader">
-            <span id="logo" class="logo"></span>
-            <nav class="cl-effect-9" id="cl-effect-9">
-                <a href="#cl-effect-9"><span>Home</span></a>
-                <a href="#cl-effect-9"><span>Hobbies</span></a>
-                <a href="#cl-effect-9"><span>Work</span></a>
-                <a href="#cl-effect-9"><span>About me</span></a>
-                <a href="#cl-effect-9"><span>Contact</span></a>
-            </nav>
-        </header>
-        
-        <section id="section1">
-            <div id="container">
-            <div class="border borderh" id="topbar"></div>
-            <div class="border borderv" id="rightbar"></div>
-            <div class="border borderh" id="bottombar"></div>
-            <div class="border borderv" id="leftbar"></div>
-            <div id="content">
-              <h1>brunoQuintela</h1>  
-            </div>
-          </div>
-        </section>
-        
-        
-    
-        
-        
-        
-        
-        <!-- END DOCUMENT -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/fx.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-    </body>
+						<div class="ms-screens">
+							<a class="ms-screen-1 stackDiv1"><div class="ms-label">Calendar Events</div></a>
+							<a class="ms-screen-2 stackDiv2"></a>
+							<a class="ms-screen-3 stackDiv3"></a>
+                            <a class="ms-screen-4 stackDiv3"></a>
+                            <a class="ms-screen-5 stackDiv3"></a>
+                            <a class="ms-screen-6 stackDiv3"></a>
+                            <a class="ms-screen-7 stackDiv3"></a>
+                            <a class="ms-screen-8 stackDiv3"></a>
+                            <a class="ms-screen-9 stackDiv3"></a>
+                            <a class="ms-screen-10 stackDiv1"></a>
+                            <a class="ms-screen-11 stackDiv1">></a>
+							<a class="ms-screen-12 stackDiv2"><div class="ms-label">Compose</div></a>
+							<a class="ms-screen-13 stackDiv3"></a>
+                            <a class="ms-screen-14 stackDiv3"></a>
+                            <a class="ms-screen-15 stackDiv3"></a>
+                            <a class="ms-screen-16 stackDiv3"></a>
+                            <a class="ms-screen-17 stackDiv3"></a>
+                            <a class="ms-screen-18 stackDiv3"><div class="ms-label">Accounts</div></a>
+						</div>
+					</div><!-- /ms-device -->
+				</div><!-- /ms-perspective -->
+			</div><!-- /ms-wrapper -->
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/phoneSlideshow.js"></script>
+	</body>
 </html>
