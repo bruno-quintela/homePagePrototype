@@ -10,8 +10,25 @@
  */
 var phoneSlideshow = (function() {
 
+    var open = false;
 	function init() {
-		[].slice.call( document.querySelectorAll( '.ms-wrapper' ) ).forEach( function( el, i ) {
+        
+        $("#toggle").click(function(){
+           changePerspective()
+           open = !open;
+        })
+        
+        function changePerspective()
+        {
+            if( !open ) {
+                $(".ms-perspective").addClass('ms-view-layers');
+            }
+            else
+            {
+                $(".ms-perspective").removeClass('ms-view-layers');
+            }
+        }
+		/*[].slice.call( document.querySelectorAll( '.ms-wrapper' ) ).forEach( function( el, i ) {
 			var open = false;
 			el.querySelector( 'button' ).addEventListener( 'click', changeView, false );
 			function changeView() {
@@ -20,20 +37,10 @@ var phoneSlideshow = (function() {
 				}
 				else {
 					classie.add( el, 'ms-view-layers' );
-                    $( '.ms-label' ).click( function(){
-                        if ( $(this).hasClass('ms-popup-layer'))
-                        {
-                            $(this).removeClass('ms-popup-layer');
-                        }
-                        else
-                        {
-                            $(this).addClass('ms-popup-layer');
-                        }
-                    });
 				}
 				open = !open;
 			}
-		} );
+		} );*/
         
         
 	}
