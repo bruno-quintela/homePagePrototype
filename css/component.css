@@ -20,6 +20,19 @@ body {
     padding: 0 1em;
 }
 
+button {
+    background: transparent;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    border: 3px solid #fff;
+    color: #fff;
+    top: 1em;
+    left: 1em;
+    text-transform: uppercase;
+}
+
 .ms-perspective {
     position: relative;
     margin: 0px auto;
@@ -54,26 +67,31 @@ body {
 
 /* Screens */
 
+.ms-screens a
+{
+    border: 15px solid black;
+}
+
 .ms-screen-1 {
     width: 350px;
     height: 350px;
-    background-color: rgba(255, 1, 1, 0.5);
+    background-color: rgba(255, 1, 1, 1);
  }
 
 .ms-screen-2 {
     width: 350px;
     height: 350px;
-    background-color: rgba(1, 255, 1, 0.5);
+    background-color: rgba(1, 255, 1, 1);
  }
 
 .ms-screen-3 {
     width: 350px;
     height: 350px;
-    background-color: rgba(1, 255, 255, 0.5);
+    background-color: rgba(1, 255, 255, 1);
  }
 
 .ms-screens a {
-    -webkit-backface-visibility: hidden;
+    -webkit-backface-visibility: visible;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -166,19 +184,7 @@ body {
     border-right-color: #687fa7
 }
 
-.ms-wrapper button {
-    background: transparent;
-    font-weight: 700;
-    font-size: 16px;
-    letter-spacing: 1px;
-    padding: 10px 30px;
-    border: 3px solid #fff;
-    color: #fff;
-    position: absolute;
-    top: 1em;
-    left: 1em;
-    text-transform: uppercase;
-}
+
 
 /* class applied to rotate phone (common effects) */
 .ms-view-layers .ms-screens .ms-screen-1 {
@@ -200,7 +206,7 @@ body {
 }
 
 .ms-view-layers .ms-screens > a:hover::after {
-    opacity: 1
+    opacity: 1;
 }
 
 .ms-view-layers .ms-label {
@@ -223,9 +229,7 @@ body {
 
 /* Effect*/
 .ms-wrapper .ms-view-layers .ms-device {
-    -webkit-transform: rotateY(-40deg) rotateX(90deg) translateZ(-15px) translateZ(-97px);
-    -moz-transform: rotateY(-30deg) rotateX(90deg) translateZ(-15px) translateZ(-97px);
-    transform: rotateY(-30deg) rotateX(90deg) translateZ(-15px) translateZ(-97px);
+    -webkit-transform: rotateY(-40deg) rotateX(90deg) translateZ(-97px) scaleX(1) scaleY(1);
 }
 
 @media screen and (max-width: 560px) { 

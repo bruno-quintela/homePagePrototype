@@ -15,5 +15,8 @@
 	overflow: hidden; /* Firefox issue */
 }
 
-
+button
+{
+    margin:auto;
+}
 
